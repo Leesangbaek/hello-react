@@ -2,23 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const name = 'React';
+  const greet = true;
+  const style = {
+    backgroundColor: 'black',
+    color: 'white',
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 style={style}>Hello {name}</h1>
+      <h2 style={{ backgroundColor: 'yellow', color: 'red' }}>Hello {name}</h2>
+    </>
   );
 }
 
