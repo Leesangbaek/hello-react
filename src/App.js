@@ -1,28 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
-import Greet from './Greet';
+
+import Event3 from './Event3';
+import Event4 from './Event4';
+import Event5 from './Event5';
+import Hooks1 from './Hooks1';
+// import Hooks2 from './Hooks2';
+import Hooks3 from './Hooks3';
+import Counter from './Counter';
+import Counter2 from './Counter2';
+import React, { useState } from 'react';
 
 const App = () => {
-  let numbers = ['1', '2', '3', '4'];
-  let Greets = [];
-  for (let i = 0; i < numbers.length; i++) {
-    Greets[i] = (
-      <li key={i}>
-        <Greet />
-      </li>
-    );
-
-    let Greets2 = numbers.map((v, i) => {
-      console.log(v, i);
-      return (
-        <li key={i}>
-          <Greet />
-        </li>
-      );
-    });
-    console.log(Greets2);
-  }
-  return <>{Greets}</>;
+  const [nickname, setNickname] = useState('별명');
+  return (
+    <>
+      <Counter nickname={nickname} setNickname={setNickname} />
+      <div>
+        <br></br>
+      </div>
+      <Event3 />
+      <div>
+        <br></br>
+      </div>
+      <Event4 />
+      <div>
+        <br></br>
+      </div>
+      <Event5 />
+      <Hooks1 />
+      <Counter2 />
+      <Hooks3 />
+    </>
+  );
 };
 
 export default App;
