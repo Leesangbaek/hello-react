@@ -1,11 +1,11 @@
 const onClick = (e) => {
-  const { isTrusted, target, bubbles, currentTarget } = e;
+  const { isTrusted, target, bubbles } = e;
   console.log('클릭 이벤트 : ', isTrusted, target, bubbles);
   e.stopPropagation();
 };
 
 const onClick2 = (e) => {
-  const { isTrusted, target, bubbles, currentTarget } = e;
+  const { isTrusted, target, bubbles } = e;
   console.log('클릭 이벤트2 : ', isTrusted, target, bubbles);
 };
 
