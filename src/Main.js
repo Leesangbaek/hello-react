@@ -19,6 +19,10 @@ const Main = () => {
         <Link to="/profile2?a=1&b=2&c=3">프로필2</Link>
         <br />
         <button onClick={move}>페이지이동</button>
+        <br />
+        {/* <Link to="redux1">리덕스1</Link>
+        <Link to="redux2">리덕스2</Link>
+        <Link to="redux3">리덕스3</Link> */}
       </div>
     </>
   );
