@@ -11,7 +11,9 @@ const Axios1 = () => {
   return (
     <>
       <button onClick={getApi}>불러오기</button>
-      <div>{data && JSON.stringify(data)}</div>
+      <div>
+        <ul>{data && data.map((e) => <li key={e.id}>{e.title}</li>)}</ul>
+      </div>
     </>
   );
 };
